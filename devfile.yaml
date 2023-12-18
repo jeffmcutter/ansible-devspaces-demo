@@ -25,6 +25,15 @@ commands:
         isDefault: true
       component: tooling-container
 
+  - id: pre-commit install
+    exec:
+      commandLine: '/usr/local/bin/pre-commit install'
+      workingDir: ${PROJECT_SOURCE}
+      group:
+        kind: run
+        isDefault: true
+      component: tooling-container
+
   - id: molecule-create
     exec:
       label: "1.Molecule: start a test pod for the automation"
