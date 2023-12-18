@@ -25,7 +25,7 @@ commands:
         isDefault: true
       component: tooling-container
 
-  - id: pre-commit install
+  - id: pre-commit
     exec:
       commandLine: '/usr/local/bin/pre-commit install'
       workingDir: ${PROJECT_SOURCE}
