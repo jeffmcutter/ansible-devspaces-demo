@@ -30,7 +30,7 @@ commands:
       commandLine: '/usr/local/bin/pre-commit install'
       workingDir: ${PROJECT_SOURCE}
       group:
-        kind: run
+        kind: build
         isDefault: true
       component: tooling-container
 
