@@ -27,7 +27,7 @@ commands:
 
   - id: pre-commit
     exec:
-      commandLine: '/usr/local/bin/pre-commit install'
+      commandLine: '/usr/local/bin/pre-commit install; echo pre-commit > pre-commit'
       workingDir: ${PROJECT_SOURCE}
       group:
         kind: build
