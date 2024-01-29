@@ -1,0 +1,16 @@
+name: pre-commit
+on:
+  pull_request:
+    branches:
+      - 'devspaces-[0-9].[0-9]+-rhel-8'
+      - devspaces-3-rhel-8
+jobs:
+  pre-commit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v3
+      - name: Run pre-commit
+        uses: pre-commit/action@v3.0.0
+        with:
+          extra_args: --all-files
